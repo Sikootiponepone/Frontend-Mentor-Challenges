@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+Body{
+	font-family: 'Red Hat Display', sans-serif;;
+	background-color:hsl(225, 100%, 94%) ;
+	height:100vh;
+}
+.background{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+	background-color: #fff;
+	border-radius: 20px;
+	position: relative;
+	width: 70%;
+	padding-bottom:3rem ;
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: auto;
+	height: auto;
+	margin: 0 40px;
+	padding: 0 20px;
+}
+
+.content .summary{
+	margin-top: 20px;
+}
+
+.content h1{
+	margin:10px;
+	color: hsl(223, 47%, 23%);
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.content p{
+	color:hsl(224, 23%, 55%) ;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.content .grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.plan{
+	display: flex;
+	align-items: center;
+	background-color:hsl(225, 100%, 94%) ;
+	border-radius: 10px;
+	width: 20rem;
+	height: 80px;
+	padding: 0 10px;
+	margin: 10px 6px;
+	transition: 0.3s;
+}
+
+.plan:hover{
+	box-shadow: 0px 10px 15px rgba(41, 33, 133, 0.3);
+}
+
+.plan .thumb{
+	height: 45px;
+}
+
+.plan .annual{
+	display: flex;
+	align-items: flex-start;
+	margin-left: 15px;
+	width: 100%;
+}
+
+.plan .annual h2{
+	font-size: 16px;
+	font-weight: 900;
+	
+}
+
+.plan .annual h2 a{
+ text-decoration: none;
+ color:hsl(224, 23%, 55%);
+ transition: 0.3s;
+}
+
+.plan .annual h2 a:hover{
+
+ color:rgba(41, 33, 133);
+}
+
+.plan .annual p{
+	font-size: 16px;
+}
+
+.content button{
+	width: 50%;
+	padding: 15px 0;
+	border: none;
+	background-color: rgba(41, 33, 133, 0.8);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 700;
+	outline: none;
+	margin: 20px 0;
+	cursor: pointer;
+	box-shadow: 0px 15px 20px rgba(41, 33, 133, 0.3);
+	transition: 0.5s;
+}
+.content button:hover{
+	transform: scale(1.05);
+}
+
+.content .github{
+	margin-top: 3rem;
+	text-decoration: none;
+	color:hsl(224, 23%, 55%) ;
+	font-weight: 900;
+	cursor: pointer;
+ 	transition: 0.5s;
+}
+.content .github:hover{
+	color:hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+
+@media(max-width: 900px){
+	.container{
+		width: 90%;
+	}
+	.content h1{
+		font-size: 40px;
+	}
+
+	.content p{
+	font-size: 14px;
+	
+}
+}
+@media(max-width: 600px){
+	.content h1{
+		font-size: 30px;
+	}
+
+	.content p{
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 17px;
+}
+}
