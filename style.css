@@ -123,10 +123,7 @@ Body{
 	margin: 20px 0;
 	cursor: pointer;
 	box-shadow: 0px 15px 20px rgba(41, 33, 133, 0.3);
-	transition: 0.5s;
-}
-.content button:hover{
-	transform: scale(1.05);
+	
 }
 
 .content .github{
